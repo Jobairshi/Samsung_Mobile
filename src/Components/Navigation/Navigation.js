@@ -14,12 +14,12 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" >
-            <Nav.Link  id="buts" href="/Services">Services</Nav.Link>
-            <Nav.Link  id="buts" href="/Contact">Contacts</Nav.Link>
-            <Nav.Link  id="buts" href="/AddService">Add Mobile</Nav.Link>
-            <Nav.Link  id="buts" href="/Banner">Banner</Nav.Link>
-            <Nav.Link  id="buts" href="/Extra">Upcomming</Nav.Link>
-            <Nav.Link  id="buts" href="/AddUpcomming">Add Upcomming</Nav.Link>
+            <a  id="buts" href="/Services">Services</a>
+            <a  id="buts" href="/Contact">Contacts</a>
+            <a  id="buts" href="/AddService">Add Mobile</a>
+            <a  id="buts" href="/Banner">Banner</a>
+            <a  id="buts" href="/Extra">Upcomming</a>
+            <a  id="buts" href="/AddUpcomming">Add Upcomming</a>
 
           </Nav>
           <Nav>
