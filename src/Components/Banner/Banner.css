@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.caro{
+    
+}
+.black{
+    color: black;
+}
+.desc{
+    font-family: 'Barlow', sans-serif;;
+    font-size:xx-large;
+    padding-top: 100px;
+    font-weight: bolder;
+}
+.head
+{
+    font-weight: bolder;
+    font-family: fantasy;
+}
+.butt
+{
+    border-radius: 20px;
+    height: 50px;
+}

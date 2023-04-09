@@ -1,0 +1,28 @@
+#mid{
+    text-align: center;
+    display: inline-block;
+}
+.pad{
+    margin-left: 40px;
+}
+.mar{
+    margin-top: 100px;
+}
+.blk{
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+.gradt {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 1s;
+    place-content: center;
+    border: white;
+  }
+  .gradt:hover, .gradient-hover-effect:focus {
+    background-color: #e9125a;
+    color: #fff;
+  }

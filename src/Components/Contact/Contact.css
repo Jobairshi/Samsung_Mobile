@@ -1,0 +1,12 @@
+.imgs{
+    background-color: aqua;
+    height: 400px;
+    text-align: center;
+   
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/bd/support/email/EmailService_PC.jpg?$1440_N_JPG$");
+}
+.big{
+    font-size:100px;
+    color: white;
+    padding-top: 100px;
+}

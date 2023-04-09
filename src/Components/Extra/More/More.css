@@ -1,0 +1,19 @@
+.gradt {
+    background: linear-gradient(90deg, #171926, transparent) #3a3e42;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 1s;
+    place-content: center;
+    border: white;
+    border-radius: 20px;
+  }
+  .gradt:hover, .gradient-hover-effect:focus {
+    background-color: #eaeaea;
+    color: #fff;
+  }
+
+.rnd{
+    border-radius: 10px;
+    border-color: white;
+}
