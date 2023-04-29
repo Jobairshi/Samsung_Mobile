@@ -1,9 +1,9 @@
-import React from 'react';
+
+import React, { } from 'react';
 import { Container, Nav, Navbar} from 'react-bootstrap';
 // import { useNavigate } from 'react-router-dom';
 import './Navigation.css';
 const Navigation = () => {
-
     return (
         <div>
         <Navbar className='Nav' collapseOnSelect expand="lg" bg="white">
@@ -20,6 +20,9 @@ const Navigation = () => {
             <Nav.Link  id="buts" href="/Banner">Banner</Nav.Link>
             <Nav.Link  id="buts" href="/Extra">Upcomming</Nav.Link>
             <Nav.Link  id="buts" href="/AddUpcomming">Add Upcomming</Nav.Link>
+            
+            <Nav.Link  id="buts" href="/LoginPage">Login</Nav.Link>
+            {/* <Nav.Link  id="buts" href="/LoginPage">Login</Nav.Link> */}
 
           </Nav>
           <Nav>
