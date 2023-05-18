@@ -1,6 +1,6 @@
 import './App.css';
 // import React from 'react';
-import React from 'react';
+import React,{} from 'react';
 
 import Navigation from './Components/Navigation/Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,12 +18,11 @@ import LoginPage from './Components/LoginPage/LoginPage';
 import RegisterPage from './Components/RegisterPage/RegisterPage';
 
 function App() {
-
+  
   return (
     <div>
-      {/* <Navigation/> */}
-      {/* <Navigation isLoggedIn={isLoggedIn} /> */}
-      <Navigation/>
+      
+      <Navigation />
 
       <Routes>
       <Route exact path="/" element={<Home/>} />
@@ -36,7 +35,7 @@ function App() {
       <Route path="/Contact" element={<Contact/>} />
       <Route path="/updateService/:serviceId" element={<UpdateService />} />
       <Route path="/AddUpcomming" element={<AddUpcomming />} />
-      <Route path="/LoginPage" element={<LoginPage />} />
+      <Route path="/LoginPage" element={<LoginPage  />} />
       <Route path="/RegisterPage"  element={<RegisterPage />} />
 
     </Routes>

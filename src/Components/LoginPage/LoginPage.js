@@ -3,12 +3,11 @@ import axios from 'axios';
 import './LoginPage.css';
 
 function LoginPage() {
+ 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   // const [showMessage, setShowMessage] = useState(false);
   const [users, setUsers] = useState([]);
- 
-
   useEffect(() => {
     // fetch user data from server on component mount
     axios.get('http://localhost:5000/UserInfo')
@@ -26,6 +25,10 @@ function LoginPage() {
     e.preventDefault();
     const foundUser = users.find(user => user.email === username && user.password === password);
     if (foundUser) {
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+      localStorage.setItem('logggin',true);
+      
       window.location.href ='/';
       //setShowMessage(true);
     } else {

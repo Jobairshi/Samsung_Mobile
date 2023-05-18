@@ -1,9 +1,29 @@
 
-import React, { } from 'react';
+import React, {} from 'react';
 import { Container, Nav, Navbar} from 'react-bootstrap';
 // import { useNavigate } from 'react-router-dom';
 import './Navigation.css';
 const Navigation = () => {
+  const storedUsername = localStorage.getItem('username');
+  console.log(storedUsername)
+  const storedPassword = localStorage.getItem('password');
+  const loggin = localStorage.getItem('logggin');
+  let isAdmin
+  if(storedUsername != null)
+  isAdmin = storedUsername.substring(0,5);
+  function LogOUtt()
+  {
+    const con = window.confirm('are sure to logout??');
+    if(con)
+    {
+      localStorage.removeItem('username');
+    localStorage.removeItem('password');
+    localStorage.setItem('logggin',false);
+    }
+    
+  }
+  
+  // console.log("logged in " + loggin);
     return (
         <div>
         <Navbar className='Nav' collapseOnSelect expand="lg" bg="white">
@@ -14,16 +34,39 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" >
-            <Nav.Link  id="buts" href="/Services">Services</Nav.Link>
+           
+
+          {(isAdmin === "admin" ||isAdmin === "Admin" )? (
+                         <Nav.Link  id="buts" href="/Services">All mobile</Nav.Link>             
+            ) : (
+              ""
+            )}
+
             <Nav.Link  id="buts" href="/Contact">Contacts</Nav.Link>
-            <Nav.Link  id="buts" href="/AddService">Add Mobile</Nav.Link>
+            
+
+            {(isAdmin === "admin" ||isAdmin === "Admin" )? (
+              <Nav.Link  id="buts" href="/AddService">Add Mobile</Nav.Link>  
+                          
+            ) : (
+              ""
+            )}
+
+            {(isAdmin === "admin" ||isAdmin === "Admin" )? (
+                         <Nav.Link  id="buts" href="/AddUpcomming">Add Upcomming</Nav.Link>              
+            ) : (
+              ""
+            )}
             <Nav.Link  id="buts" href="/Banner">Banner</Nav.Link>
             <Nav.Link  id="buts" href="/Extra">Upcomming</Nav.Link>
-            <Nav.Link  id="buts" href="/AddUpcomming">Add Upcomming</Nav.Link>
             
-            <Nav.Link  id="buts" href="/LoginPage">Login</Nav.Link>
-            {/* <Nav.Link  id="buts" href="/LoginPage">Login</Nav.Link> */}
-
+            
+             {storedPassword? (
+              <Nav.Link id="buts"onClick={LogOUtt} href="/">Logout</Nav.Link>
+              
+            ) : (
+              <Nav.Link id="buts" href="/LoginPage">Login</Nav.Link>
+            )}
           </Nav>
           <Nav>
            
