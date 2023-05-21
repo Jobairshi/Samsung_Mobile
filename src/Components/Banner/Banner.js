@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 import './Banner.css'
-
+// slide
 const Banner = () => {
     const [index, setIndex] = useState(0);
   
